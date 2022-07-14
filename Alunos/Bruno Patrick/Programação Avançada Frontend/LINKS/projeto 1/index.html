@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save ur links!</title>
+    
+    <link rel="shortcut icon" href="./icons/link.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header>
+                    
+            <div id="logo">
+                <img src="./icons/logo.svg" alt="" id="logosvg"> <!--Logo-->
+            </div>
+    
+            <div class="center">
+                <div id="vineline"></div>
+            </div>
+    
+    
+                <div id="nav" class="center">
+    
+                    <nav class="center">
+        
+                        <div id="navOptions">
+                            <p>About</p>
+                            <p>Contact</p>
+                            <p>Feedback</p>
+                        </div>
+
+                        <div id="bars">
+                            <img src="./icons/bars.svg" alt=""> <!--Bars.svg-->
+                        </div>
+        
+                        <div id="navtext">
+                            <p>REPLACE YOUR WEB LINKS HERE!</p>
+                        </div>
+        
+                        <div id="account">
+                            <img src="./icons/arrow-right-to-bracket.svg" alt=""> <!--Sign In/Out-->
+                        </div>
+        
+                    </nav>
+    
+                </div>
+
+                <div id="nav" class="center nav2" style="display: none;">
+                    <nav class="center">
+        
+                        <div id="bars" class="w100">
+                            <p>About</p>
+                            <p>Contact</p>
+                            <p>Feedback</p>
+                        </div>
+
+                        <div id="account" class="close">
+                            <img src="https://site-assets.fontawesome.com/releases/v6.1.1/svgs/light/circle-xmark.svg" alt=""> <!--Sign In/Out-->
+                        </div>
+        
+                    </nav>
+                </div>        
+        
+    </header>
+    <div id="desktop">
+        
+        <div id="form">
+            <div id="formText">
+                <p>REPLACE YOUR WEB LINKS HERE!</p>
+            </div>
+            <form action="/" id="form-input">
+    
+                <input type="text" name="name" id="name" placeholder="Digite o nome do site..."
+                     maxlength="23" required>
+    
+                <input type="text" name="url" id="url" 
+                    placeholder="Digite a URL do site..." required>
+    
+                <div id="button-submit">
+                    <button type="submit" id="form-submit">
+                        <img src="./icons/arrow-submit.svg" alt=""> <!--Arrow-send-->
+                    </button>
+                </div>
+            </form>
+    
+        </div>
+        
+        <div class="center">
+            <div id="brownline"></div>
+        </div>
+        
+        <main>
+    
+            <form action="/" id="search-form">
+                <div class="center">
+                    <input type="text" name="" id="search" placeholder="Search by name...">
+                </div>
+            </form>
+    
+            <div id="cards-group">
+    
+                <!-- <div id="card">
+    
+                        <div id="card-text">
+                            <a href=""> </a>
+                        </div>
+    
+                        <div id="card-action">
+                            <img src="./icons/circle-trash.svg" alt=""> Delete Button
+                        </div>
+    
+                </div> -->
+    
+            </div>
+    
+        </main>
+
+    </div>
+
+    <footer>
+
+        <div class="center" id="footer-line">
+            <div id="vineline" class="footer-line"></div>
+        </div>
+
+        <div id="footer">
+            <p>About US</p>
+            <p>About Project</p>
+
+            <div id="socialMedias">
+                <p>Developed BY</p>
+                <div id="footer-img-socialMedias">
+                    <a href="http://github.com/Bruno-Patrick" target="_blank" rel="noopener noreferrer">
+                        <img src="./icons/social medias/github.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            
+            <div id="socialMedias">
+                <p>Social Medias</p>
+                <div id="footer-img-socialMedias" class="content-end">
+                    <img src="./icons/social medias/twitter.svg" alt="">
+                    <img src="./icons/social medias/instagram.svg" alt="">
+                    <img src="./icons/social medias/facebook.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
