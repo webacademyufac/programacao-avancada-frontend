@@ -12,14 +12,20 @@ body {
     padding: 70px 0;
 }
 
-p, li {
+p,
+li {
     color: #444;
     font-size: 14px;
 }
 
+.container-fluid {
+    padding: 0 !important;
+}
+
 /* Barra de navegação */
 
-header, .navbar {
+header,
+.navbar {
     background-color: #353D41;
 }
 
@@ -51,6 +57,52 @@ header, .navbar {
 
 .navbar-expand-lg .navbar-nav .nav-link {
     padding: 1rem .8rem;
+}
+
+/* Slideshow */
+
+#mainSlider .carousel-inner,
+#mainSlider .carousel-item {
+    height: 90vh;
+}
+
+#mainSlider .carousel-caption {
+    top: 35%;
+}
+
+#mainSlider .carousel-caption h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+#mainSlider .carousel-caption p {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 100px;
+    color: #FFF;
+}
+
+.main-btn {
+    background-color: #FFA500;
+    color: #FFF;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: .5s;
+}
+
+.main-btn:hover {
+    text-decoration: none;
+    color: #FFF;
+    background-color: transparent;
+    border-color: #FFA500;
+}
+
+.carousel-indicators .active {
+    background-color: #FFA500;
 }
 
 /* Sobre o MVP Studio */
@@ -91,7 +143,7 @@ header, .navbar {
 }
 
 #about-list i {
-    color: green;
+    color: #FFA500;
     font-size: 15px;
 }
 
@@ -107,10 +159,30 @@ header, .navbar {
     margin-bottom: 20px;
 }
 
-.service-box:hover > i, .service-box:hover > h3 {
-    color: green;
+.service-box:hover>i,
+.service-box:hover>h3 {
+    color: #FFA500;
 }
 
-.service-box i, .service-box h3 {
+.service-box i,
+.service-box h3 {
     transition: .5s;
+}
+
+/* Dados */
+
+.circle-box div {
+    padding: 0 40px;
+}
+
+.progressbar-text {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#data-area p {
+    color: #FFF;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 20px;
 }
