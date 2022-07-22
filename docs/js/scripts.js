@@ -6,7 +6,7 @@ $(document).ready(function () {
     let circleA = new ProgressBar.Circle(containerA, {
 
         color: '#FFA500',
-        strokeWidth: 8,
+        strokeWidth: 1,
         duration: 1400,
         from: { color: '#aaa' },
         to: { color: '#FFA500' },
@@ -106,6 +106,7 @@ $(document).ready(function () {
     // setTimeout serve para carregar primeiro as imagens
     setTimeout(function () {
         $('#data-area').parallax({ imageSrc: 'img/cidadeparallax.png' });
+        $('#apply-area').parallax({ imageSrc: 'img/cidadeparallax.png' });
     }, 200);
 
 });
