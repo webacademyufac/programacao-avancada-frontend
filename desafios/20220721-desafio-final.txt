@@ -1,0 +1,10 @@
+Desafio final de front-end
+
+Tarefas:
+- terminar a página, baseado no modelo;
+- aplicar Sass ou Less;
+- corrigir o header: logo, posições e menu para dispositivos móveis;
+- verificar responsividade;
+- implementar sua própria identidade visual: mudar cores, logo, imagens e texto à vontade;
+- subir a página via GitHub Pages: https://pages.github.com/;
+- subir o repositório até o dia 27 de julho para a página students-codes de programacao-avancada-frontend, criando pasta com o seu primeiro nome sem caracteres especiais e lowercase nome como raiz do seu repositório, dentro de students-codes.
