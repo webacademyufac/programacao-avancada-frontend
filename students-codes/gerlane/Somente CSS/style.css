@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+}
+
+html{
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    height: 100%;
+}
+
+header{
+    background-color: #DAEAF6;
+    width: 100%;
+}
+
+#topo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-top: 0.7em;
+}
+
+#logo{
+    height: 120px;
+    width: auto;
+}
+
+#favsSlogan{
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin-top: 2em;
+}
+
+.navLink{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #296670;
+    border: 1px solid white;
+    width: 100%;
+    padding-top: 0.5em;
+    text-align: center;
+    height: 1.5em;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.navLink:hover{
+    background-color: #7EC4CF;
+    color: #000000;
+}
+
+#mainContent{
+    margin-top: 2em;
+}
+
+h3{
+    margin-left: 1.5em;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    padding: 1em;
+}
+
+label{
+    padding: 0.2em;
+    margin-top: 0.2em;
+    font-size: 1.2em;
+}
+
+input{
+    border-radius: 10px;
+    height: 2.5em;
+    border: none;
+    font-size: 1.2em;
+    background-color: #DAEAF6;
+}
+
+#buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1em;
+}
+
+#save{
+    width: 40%;
+    padding: 0.5em;
+    border: 1px solid #7EC4CF;
+    border-radius: 10px;
+    background-color: #7EC4CF;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#save:hover{
+    background-color: #E3D2F4;
+    border: none;
+}
+
+#reset{
+    width: 40%;
+    padding: 0.5em;
+    border: 1px solid #7EC4CF;
+    border-radius: 10px;
+    background-color: #7EC4CF;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#reset:hover{
+    background-color: #E3D2F4;
+    border: none;
+}
+
+#list{
+    overflow-y: scroll;
+    height: 300px;
+}
+
+ul{
+    margin-top: 1em;
+}
+
+li{
+    margin-top: 0.5em;
+    margin-right: 2em;
+    padding: 0.7em;
+    list-style: none;
+    border-radius: 10px;
+    background-color: #296670;
+}
+
+li::before{
+    content: "\2605";
+    color: #ffffff;
+    font-size: 1.4em;
+}
+
+.favorite, li{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2em;
+    height: 2em;
+}
+
+.favorite:hover{
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+.remove{
+    background-color: #296670;
+    border: none;
+    height: 2em;
+    color: #ffffff;
+    float: right;
+    margin-top: 0.3em;
+    cursor: pointer;
+}
+
+#text{
+    margin-top: 1.3em;
+    padding: 1.3em;
+    font-size: 1.2em;
+    background-color: #DAEAF6;
+}
+
+#media{
+    display: none;
+}
+
+#topAnchor{
+    margin: 1.5em;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#linkTop{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+footer{
+    background-color: #E3D2F4;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 1.2em;
+}
+
+.socialMedia{
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+    height: 25px;
+    width: auto;
+}
+
+#dev{
+    font-size: 0.6em;
+    text-align: center;
+}
+
+@media (min-width: 633px) { /*Antes 480px*/
+
+    #topo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #favsSlogan{
+        font-size: 1.7em;
+        margin-left: 1.5em;
+    }
+
+    nav{
+        flex-direction: row;
+    }
+
+    #mainContent{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #cadastro{
+        width: 50%;
+        border-right: 3px solid #296670;
+    }
+
+    #favorites{
+        width: 50%;
+    }
+
+    #favorite, li{
+        height: 1.7em;
+        font-size: 1.2em;
+    }
+
+    li{
+        margin-top: 0.4em;
+        margin-right: 2em;
+        padding: 0.5em;
+    }
+
+    #extraContent{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #text{
+        font-size: 1.3em;
+        padding: 0.9em;
+        width: 50%;
+    }
+
+    #media{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.7em;
+        width: 50%;
+    }
+
+    #video{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color:  #d9c1f0;
+        align-items: center;
+        height: 60%;
+    }
+
+    #videoPlayer{ 
+        height: auto;
+        width: 300px;
+    }
+
+    #ad{
+        display: flex;
+        flex-direction: column;
+        background-color: #7EC4CF;
+        align-items: center;
+        justify-content: space-around;
+        height: 40%;
+    }
+
+    #adImg{
+        height: 90px;
+        width: auto;
+        align-self: auto;
+    }
+
+    #topAnchor{
+        display: none;
+    }
+
+}
+
+@media (min-width: 948px) { /*Antes 768px*/
+
+    #text{
+        width: 33%;
+    }
+
+    #media{
+        display: flex;
+        flex-direction: row;
+        width: 67%;
+    }
+
+    #video{
+        width: 50%;
+        height: 100%;
+    }
+
+    #ad{
+        width: 50%;
+        height: 100%;
+    }
+}
+
+/* Common breakpoints are 320px — 480px for mobile devices, 481px — 768px for iPads & tablets, 769px — 1024px for small screens like laptop, 1025px — 1200px for large screens like Desktops, and 1201px and above for extra large screens like TV. */
