@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap v5 - Alpha1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+
+    <style>
+        .my-custom-row{
+            background-color: #ffe4c4;
+            height: 400px;
+        }
+    </style>
+
+    <!-- Navegação em "pílula" -->
+    <ul class="nav nav-pills nav-fill">
+        <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Much longer nav link</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link disabled">Disabled</a>
+        </li>
+    </ul>
+    
+    <!-- A div container contém testes com a disposição dos itens com posicionamento responsivo -->
+    <div class="container">
+        <!-- Col One em telas pequenas ocupa os 12 espaços, em telas médias 6 espaços, em telas grandes 2 espaços -->
+        <!-- Col Two em telas pequenas ocupa os 12 espaços, em telas médias 6 espaços, em telas grandes 8 espaços -->
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-2">Col One</div>
+            <div class="col-sm-12 col-md-6 col-lg-8">Col Two</div>
+        </div>
+
+        <!-- Col One em telas pequenas acima ocupa 6 espaços, em telas pequenas passa a ocupar a segunda posição -->
+        <!-- Col Two em telas pequenas acima ocupa 6 espaços, em telas pequenas passa a ocupar a primeira posição -->
+        <div class="row">
+            <div class="col-sm-6 order-sm-2">Col One</div>
+            <div class="col-sm-6 order-sm-1">Col Two</div>
+        </div>
+
+        <!-- Col One em telas pequenas acima ocupa 6 espaços, tem um espaço de 2 colunas antes -->
+        <!-- Col Two em telas pequenas acima ocupa 6 espaços, tem um espaço de 1 coluna antes -->
+        <div class="row">
+            <div class="col-sm-4 offset-2">Col One</div>
+            <div class="col-sm-4 offset-1">Col Two</div>
+        </div>
+
+        <!-- A div my-custom-row está alinhada no centro horizontal e verticalmente, com um padding 5 entre as colunas (gx = gutters)-->
+        <div class="row my-custom-row justify-content-center align-items-center gx-5">
+            <!-- Col One em telas médias acima ocupa 4 espaços, tem um padding 3, borda e possui um backgroung claro -->
+            <!-- Col Two em telas pequenas acima ocupa 4 espaços, tem um padding 3, borda e possui um backgroung claro -->
+            <div class="col-sm-4"><div class="p-3 border bg-light">Col One</div></div>
+            <div class="col-sm-4"><div class="p-3 border bg-light">Col Two</div></div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <!-- Botão para abrir o Modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Launch demo modal
+                </button>
+            </div>
+            <div class="col"><button type="button" class="btn btn-secondary">Secondary</button></div>
+            <div class="col"><button type="button" class="btn btn-danger">Danger</button></div>
+        </div>
+
+        <!-- A div card contém um exemplo do componente card -->
+        <div class="row ">
+            <div class="card" style="width: 18rem;">
+                <img src="https://images.unsplash.com/photo-1657735875828-fa02b170fcc4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="card-img-top" alt="Foto de um picnic, e mãos segurando um livre">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+  
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Programação Avançada Front End</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                Text inside the modal
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+</html>

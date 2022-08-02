@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meus Links</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <div id="topo">
+            <img id="logo" src="./assets/fav-icon.svg" alt="Logo Favs">
+            <span id="favsSlogan">Seus favoritos sempre com você</span>
+        </div>
+
+        <nav>
+            <a class="navLink" href="#cadastro">Cadastrar</a>
+            <a class="navLink" href="#favorites">Seus Links</a>
+            <a class="navLink" href="#">Sair</a>
+        </nav>
+    </header>
+
+    <div id="mainContent">
+        <div id="cadastro">
+            <h3>Cadastro de Favoritos</h3>
+            <form>
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" required>
+
+                <label for="url">URL: </label>
+                <input type="url" name="url" id="url" required>
+
+                <div id="buttons">
+                    <button id="reset" type="reset">Limpar</button>
+                    <button id="save" type="submit">Salvar</button>
+                </div>
+
+            </form>
+        </div> <!-- Fechamento da div cadastro -->
+
+        <div id="favorites">
+            <h3>Seus Favoritos</h3>
+            <div id="list">
+                <ul>
+                    <li>
+                        <a class="favorite" href="#">Google</a>
+                        <button class="remove"><img class="trash" src="./assets/icons8-lixo.svg" /></button>
+                    </li>
+                    <li>
+                        <a class="favorite" href="#">GitHub</a>
+                        <button class="remove"><img class="trash" src="./assets/icons8-lixo.svg" /></button>
+                    </li>
+                    <li>
+                        <a class="favorite" href="#">GitHub</a>
+                        <button class="remove"><img class="trash" src="./assets/icons8-lixo.svg" /></button>
+                    </li>
+                    <li>
+                        <a class="favorite" href="#">GitHub</a>
+                        <button class="remove"><img class="trash" src="./assets/icons8-lixo.svg" /></button>
+                    </li>
+                    <li>
+                        <a class="favorite" href="#">GitHub</a>
+                        <button class="remove"><img class="trash" src="./assets/icons8-lixo.svg" /></button>
+                    </li>
+                    <li>
+                        <a class="favorite" href="#">GitHub</a>
+                        <button class="remove"><img class="trash" src="./assets/icons8-lixo.svg" /></button>
+                    </li>
+                    <li>
+                        <a class="favorite" href="#">GitHub</a>
+                        <button class="remove"><img class="trash" src="./assets/icons8-lixo.svg" /></button>
+                    </li>
+                </ul>
+            </div>
+        </div> <!-- Fechamento da div favorites -->
+    </div> <!-- Fechamento da div mainContent -->
+
+    <div id="extraContent">
+        <div id="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non orci sed sem mollis pellentesque
+                a at
+                tortor. Phasellus pulvinar nibh nec diam sagittis venenatis. Etiam fringilla arcu justo, in
+                ullamcorper
+                mauris ullamcorper eu. Donec quis nisi ac mi maximus condimentum.</p>
+        </div> <!-- Fechamento da div text -->
+        <div id="media">
+            <div id="video">
+                <iframe id="videoPlayer" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div> <!-- Fechamento da div video -->
+
+            <div id="ad">
+                <img id="adImg" src="assets/googleAds.png" alt="Espaço para anúncios">
+            </div> <!-- Fechamento da div ad -->
+        </div> <!-- Fechamento da div media -->
+    </div> <!-- fechamento da div extra -->
+
+    <div id="topAnchor">
+        <a href="#topo" id="linkTop">&#8593; Voltar para cima</a>
+    </div>
+
+
+    <footer>
+        <div id="social">
+            <span>Nos siga nas redes sociais</span><br>
+
+            <a href="https://www.facebook.com.br"><img class="socialMedia" src="assets/icons8-facebook-novo.svg"></a>
+
+            <a href="https://www.twitter.com.br"><img class="socialMedia" src="assets/icons8-twitter.svg"></a>
+
+            <a href="https://www.linkedin.com.br"><img class="socialMedia" src="assets/icons8-linkedin.svg"></a>
+
+            <a href="https://www.instagram.com.br"><img class="socialMedia" src="assets/icons8-instagram.svg"></a>
+
+            <a href="https://github.com/gerlaneln"><img class="socialMedia" src="assets/icons8-github.svg"></a>
+        </div> <!-- Fechamento da div social -->
+        <br>
+        <span id="dev">Desenvolvido por: Gerlâne Lima.<br>Todos os direitos reservados</span>
+    </footer>
+</body>
+
+</html>
